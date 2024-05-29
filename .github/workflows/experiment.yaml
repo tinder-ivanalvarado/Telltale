@@ -84,6 +84,7 @@ jobs:
              experiment-id: "no-profile-${{github.run_number}}"
              variant: ${{ matrix.variant }}
              run-id: ${{ matrix.runs }}
+             ge-url: ${{ secrets.GE_URL }}
              api-key: ${{ secrets.DEVELOCITY_ACCESS_KEY }}
              repository: ${{ github.event.inputs.repository }}
          - uses: actions/checkout@v3
