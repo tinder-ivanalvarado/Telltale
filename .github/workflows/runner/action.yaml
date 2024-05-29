@@ -33,4 +33,4 @@ runs:
            ./gradlew ${{ inputs.task }}  -Dscan.tag.${{ inputs.run-id }} -Dscan.tag.${{ inputs.variant }} -Dscan.tag.experiment -Dscan.tag.${{inputs.experiment-id}} -Dscan.tag.${{inputs.experiment-id}}_variant_experiment_${{ inputs.variant }}
       shell: bash
       env:
-        GRADLE_ENTERPRISE_ACCESS_KEY: ${{ inputs.api-key }}
+        DEVELOCITY_ACCESS_KEY: ${{ inputs.api-key }}

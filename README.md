@@ -92,7 +92,7 @@ Provides detailed metrics of the Kotlin compiler for each variant
 * The repository under experiment must apply the GE plugin
 * After forking the repository you need to define the secrets:
   * GE_URL: Develocty URL instance
-  * GRADLE_ENTERPRISE_ACCESS_KEY: Access key required to publish Build scans
+  * DEVELOCITY_ACCESS_KEY: Access key required to publish Build scans
   * GE_API_KEY: Token required to retrieve GE API data
 * The summary of task path/type metrics provides data of cacheable tasks. If you require a complete report of the tasks independent of the cacheable state you can generate it with
   the CLI [TaskReport](https://github.com/cdsap/TaskReport):

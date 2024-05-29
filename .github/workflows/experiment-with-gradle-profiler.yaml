@@ -57,7 +57,7 @@ jobs:
              experiment-id: "profile-${{github.run_number}}"
              variant: ${{ matrix.version }}
              class: ${{ github.event.inputs.class }}
-             api-key: ${{ secrets.GRADLE_ENTERPRISE_ACCESS_KEY }}
+             api-key: ${{ secrets.DEVELOCITY_ACCESS_KEY }}
              repository: ${{ github.event.inputs.repository }}
          - uses: actions/checkout@v3
     report:
