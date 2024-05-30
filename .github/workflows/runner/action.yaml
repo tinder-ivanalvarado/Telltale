@@ -34,3 +34,4 @@ runs:
       shell: bash
       env:
         DEVELOCITY_ACCESS_KEY: ${{ inputs.api-key }}
+        DEVELOCITY_URL: ${{ inputs.develocity-url }}

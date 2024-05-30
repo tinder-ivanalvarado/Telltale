@@ -84,10 +84,9 @@ jobs:
              experiment-id: "no-profile-${{github.run_number}}"
              variant: ${{ matrix.variant }}
              run-id: ${{ matrix.runs }}
+             develocity-url: ${{ secrets.GE_URL }}
              api-key: ${{ secrets.DEVELOCITY_ACCESS_KEY }}
              repository: ${{ github.event.inputs.repository }}
-           env:
-             GE_URL: ${{ secrets.GE_URL }}
          - uses: actions/checkout@v3
     report:
       runs-on: "ubuntu-latest"
