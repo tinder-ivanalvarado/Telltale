@@ -100,7 +100,7 @@ jobs:
              tags: "${{ github.event.inputs.variantA }},${{ github.event.inputs.variantB }}"
              api-key: ${{ secrets.GE_API_KEY }}
              url: ${{ secrets.GE_URL }}
-             gh_token: ${{secrets.GITHUB_TOKEN}}
+             gh_token: ${{ secrets.GITHUB_TOKEN }}
              profile: false
              taskpathreport: ${{ github.event.inputs.taskpathreport }}
              processreport: ${{ github.event.inputs.processreport }}
