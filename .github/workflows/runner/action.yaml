@@ -33,5 +33,5 @@ runs:
            ./gradlew ${{ inputs.task }}  -Dscan.tag.${{ inputs.run-id }} -Dscan.tag.${{ inputs.variant }} -Dscan.tag.experiment -Dscan.tag.${{inputs.experiment-id}} -Dscan.tag.${{inputs.experiment-id}}_variant_experiment_${{ inputs.variant }}
       shell: bash
       env:
-        DEVELOCITY_ACCESS_KEY: ${{ secrets.DEVELOCITY_ACCESS_KEY }}
-        DEVELOCITY_URL: ${{ secrets.DEVELOCITY_URL }}
+        DEVELOCITY_ACCESS_KEY: ${{ inputs.api-key }}
+        DEVELOCITY_URL: ${{ inputs.develocity-url }}
